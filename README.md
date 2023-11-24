@@ -11,10 +11,16 @@ The "Grasping Assuming Symmetry" project utilizes symmetry in objects to optimiz
 - The point cloud data is downsampled using a voxel grid for computational efficiency.
 - RANSAC plane segmentation removes the plane, leaving only the object of interest in the point cloud.
 
+![1](https://github.com/upasana099/Grasping-Assuming-Symmtery/assets/89516193/f067acc1-8f0f-47a5-a177-642fa322acc1)
+
+
 ### Step 2: Point Cloud Completion
 
 - A symmetry-based approach is employed to complete the point cloud by identifying the optimal symmetry plane considering visibility constraints.
 - The algorithm generates all possible planes and selects the one with the highest score, resulting in a comprehensive point cloud.
+
+![2](https://github.com/upasana099/Grasping-Assuming-Symmtery/assets/89516193/855a57db-f55f-4720-9800-1c5380c349d5)
+
 
 ### Step 3: Normal Estimation
 
@@ -22,12 +28,17 @@ The "Grasping Assuming Symmetry" project utilizes symmetry in objects to optimiz
 - KDTree ensures efficient spatial neighbor searching.
 -  Normals are visualized as arrows emanating from points in the point cloud.
 
+![WhatsApp Image 2023-10-13 at 5 43 53 PM](https://github.com/upasana099/Grasping-Assuming-Symmtery/assets/89516193/37744769-99e7-4a4f-97f0-e2f5f8ee5103)
+
+
 ### Step 4: Grasp Detection
 
 - Grasp contacts are calculated for the robot based on the completed 3D point cloud.
 - Steps include input parameters, nearest point search, angle calculation, and determining the best grasp.
+![WhatsApp Image 2023-10-13 at 5 46 48 PM](https://github.com/upasana099/Grasping-Assuming-Symmtery/assets/89516193/07bf0a69-006c-47be-9570-787537ddc7fe)
 
-## 3. Results of Point Cloud Completion
+
+## 3. scenarios of Point Cloud Completion
 
 - **Case 1:** Coke can
 - **Case 2:** Beer can
